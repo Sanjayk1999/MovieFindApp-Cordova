@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/onsenui.css">
+<link rel="stylesheet" href="css/onsen-css-components.css">
+<script src="js/onsenui.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
+<title>MMdB</title>
+</head>
+<body>
+    <ons-navigator animation="slide" swipeable id="Navigator" page="page1"></ons-navigator>
+    <template id="page1">
+    <ons-page id="home">
+        <ons-toolbar>
+          <div class="center" style="text-align: center;">Movie Search</div>
+        </ons-toolbar>
+
+        <p style="text-align: center; margin-top: 10px;">
+            <ons-search-input id="searchText"
+              placeholder="Search for your movies"
+            ></ons-search-input>
+        </p>
+        <div style="text-align: center; margin-top:10px;">
+            <ons-button id="btn">Search</ons-button>
+        </div>
+
+        <ons-list style="margin-top:10px;" id="movies">
+        </ons-list>
+    </ons-page>
+    </template>
+
+    <template id="page2">
+    <ons-page>
+        <ons-toolbar>
+            <div class="left">
+                <ons-back-button>Back</ons-back-button>
+            </div>
+        </ons-toolbar>
+        <div id="cardpage">
+            
+        </div>
+    </ons-page>
+    </template>
+<script src="js/index.js"></script>
+</body>
+</html>
